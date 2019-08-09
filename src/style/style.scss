@@ -3,10 +3,10 @@ body{
 	padding:0px;
 	max-width:1500px;
 	background-color:#767f81;
-	background-image: url(/static/fon.jpg);
+	background-image: url(/static/back/fon.jpg);
 	margin-top:100px;
 	font-family: 'Jura', sans-serif;
-	@import url('https://fonts.googleapis.com/css?family=Jura&display=swap');
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 }
 a{
 	text-decoration:none;
@@ -17,7 +17,7 @@ a{
 	max-height: 100px;
 	background-color:black;
 	background-position: center;
-	background-image: url(/static/456.jpg);
+	background-image: url(/static/back/456.jpg);
 	z-index:99;
 	position: fixed;
 	left:0;
@@ -37,13 +37,14 @@ a{
 }
 
 .kontakt{
-	width:30%;
+	width: 300px;;
 	height:100px;
 	float:right;
-	text-align:center;
+	text-align:left;
 	font-size:13px;
 	color:white;
 	letter-spacing:1px;
+	overflow: hidden;
 }
 
 .menu{
@@ -71,6 +72,7 @@ ul{
 section{
 	max-width:100%;
 	display:flex;
+	overflow: hidden;
 }
 .bord{
 	margin:60px auto 30px;
@@ -81,51 +83,50 @@ section{
 }
 .news{
 	color:white;
-	height:440px;
-	font-size:20px;
-	line-height:22px;	
-}
-
-.news1{
-	color:white;
 	height:550px;
 	font-size:20px;
 	line-height:22px;	
-}
-.news2{
-	color:white;
-	height:440px;
-	font-size:20px;
-	line-height:22px;	
+	align-items: center;
 }
 .text {
 	width:570px;
 	text-align:left;
 }
-.text1{
-	width:570px;
-	text-align:left;
-}
-.text2{
-	width:570px;
-	text-align:left;	
-}
 .foto {
 	width:650px;	
-	text-align:center;
-}
-.foto1{
-	width:650px;
-	text-align:center;
-	margin-top:20px;
-}
-.foto2{
-	width:650px;
 	text-align:center;
 }
  .img {
 	width: 400px;
 	height:400px;
 	border-radius:50%;
-	padding-top:20px;
+}
+.price{
+	color:white;
+	height:550px;
+	font-size:20px;
+	line-height:22px;	
+	align-items: center;
+}
+.text_price{
+	width:570px;
+	text-align:left;
+	margin-bottom: 20px;
+}
+.but{
+	border-radius:30px;
+	font-size:20px;
+	color:white;
+	background-color:rgba(47, 65, 224, 0.87) ;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 300px;
+	height: 50px;
+	line-height:50px;
+	margin-top: 40px;
+}
+
+.but:hover{
+	background-color:rgba(47, 65, 224, 0.671) ;
 }
