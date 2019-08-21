@@ -5,7 +5,6 @@ body{
 	max-width:100%;
 	background-color:#767f81;
 	background-image: url(/static/back/fon.jpg);
-	margin-top:100px;
 	font-family: 'Jura', sans-serif;
 	@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 }
@@ -13,24 +12,38 @@ a{
 	text-decoration:none;
 	color:white;
 }
+.link {
+	position: absolute;
+	top:0;
+}
+.up {
+	position:fixed;
+	text-align: center;
+	opacity: 0.1;
+	height: 100%;
+	width: 7%;
+	padding: 10px;
+	padding-top: 30px;
+	transition: 0.2s;
+}
+.up:hover {
+	opacity: 0.7;
+	transition-duration: 0.5s;
+	background-color: #99b8bebb;
+	color:#fff;
+}
 .cap{
 	display: flex; 
 	justify-content: space-between;
+	flex-wrap:wrap;
 	max-height: 100px;
 	background-color:black;
 	background-position: center;
 	background-image: url(/static/back/456.jpg);
-	z-index:99;
-	position: fixed;
-	left:0;
-	top:0;
-	right:0;
-	bottom:0;
 }
 .name{
 	text-align: center;
 	width:300px;
-	height:100px;
 	color:white;
 	padding-top:2px;
 	font-size:17px;
@@ -38,12 +51,10 @@ a{
 
 .kontakt{
 	width: 300px;;
-	height:100px;
 	text-align:left;
 	font-size:13px;
 	color:white;
 	letter-spacing:1px;
-	overflow: hidden;
 }
 
 .menu{
@@ -69,10 +80,10 @@ ul{
 .menu li:hover{
 	background-color:#767f81;
 }
-@media(min-width:100px) {
 section {
 	display:flex;
-	overflow: hidden;
+	flex-direction: row;
+	padding: 50px;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: center;
@@ -84,9 +95,8 @@ section {
 	height:50px;
   }
 .text {
-	flex-basis:45%;
+	flex:0 1 45%;
   }
-}  
  .img {
 	width: 400px;
 	height:400px;
@@ -94,21 +104,21 @@ section {
  } 
 .news{
 	color:white;
-	height:550px;
 	font-size:20px;
 	line-height:22px;	
 }
-.price{
+.price {
 	color:white;
-	height:550px;
 	font-size:20px;
 	line-height:22px;	
 }
-.text_price{
+.text_price {
 	flex-basis:30%;
 }
-
-.but{
+h2 {
+	line-height:30px ;
+}
+.but {
 	border-radius:30px;
 	font-size:20px;
 	color:white;
@@ -117,11 +127,10 @@ section {
 	text-align: center;
 	display: block;
 	width: 300px;
-	height: 50px;
 	line-height:50px;
 	margin-top: 40px;
 }
 
-.but:hover{
+.but:hover {
 	background-color:rgba(47, 65, 224, 0.671) ;
 }
